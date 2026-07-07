@@ -24,12 +24,12 @@
 #    Classes
 #################################################################
 
+###  https://www.hesge.ch/open-research-data/ontologies/core#Data
+:Data rdf:type owl:Class .
+
+
 ###  https://www.hesge.ch/open-research-data/ontologies/core#Domains
 :Domains rdf:type owl:Class .
-
-
-###  https://www.hesge.ch/open-research-data/ontologies/core#Files
-:Files rdf:type owl:Class .
 
 
 ###  https://www.hesge.ch/open-research-data/ontologies/core#Formats
