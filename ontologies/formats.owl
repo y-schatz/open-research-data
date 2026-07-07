@@ -8,7 +8,7 @@
 @base <http://www.hesge.ch/open-research-data/ontologies/formats#> .
 
 <http://www.hesge.ch/open-research-data/ontologies/formats> rdf:type owl:Ontology ;
-                                                             owl:imports <http://www.hesge.ch/open-research-data/ontologies/core> .
+                                                             owl:imports <https://raw.githubusercontent.com/y-schatz/open-research-data/main/ontologies/formats.owl> .
 
 #################################################################
 #    Individuals
