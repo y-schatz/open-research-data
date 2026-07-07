@@ -14,13 +14,13 @@
 
 ###  http://www.hesge.ch/open-research-data/ontologies/core#domain
 :domain rdf:type owl:ObjectProperty ;
-        rdfs:domain :Data ;
+        rdfs:domain :DataTypes ;
         rdfs:range :Domains .
 
 
 ###  http://www.hesge.ch/open-research-data/ontologies/core#format
 :format rdf:type owl:ObjectProperty ;
-        rdfs:domain :Data ;
+        rdfs:domain :DataTypes ;
         rdfs:range :Formats .
 
 
@@ -29,7 +29,7 @@
 #################################################################
 
 ###  http://www.hesge.ch/open-research-data/ontologies/core#Data
-:Data rdf:type owl:Class .
+:DataTypes rdf:type owl:Class .
 
 
 ###  http://www.hesge.ch/open-research-data/ontologies/core#Domains
