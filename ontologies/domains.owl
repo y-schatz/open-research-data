@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix core: <http://www.hesge.ch/open-research-data/ontologies/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.hesge.ch/open-research-data/ontologies/domains#> .
+@base <https://www.hesge.ch/open-research-data/ontologies/domains#> .
 
 <https://www.hesge.ch/open-research-data/ontologies/domains> rdf:type owl:Ontology ;
                                                               owl:imports <https://raw.githubusercontent.com/y-schatz/open-research-data/refs/heads/main/ontologies/core.owl> .
