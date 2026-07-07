@@ -1,22 +1,22 @@
-@prefix : <https://www.hesge.ch/open-research-data/ontologies/core#> .
+@prefix : <http://www.hesge.ch/open-research-data/ontologies/core#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://www.hesge.ch/open-research-data/ontologies/core#> .
+@base <http://www.hesge.ch/open-research-data/ontologies/core#> .
 
-<https://www.hesge.ch/open-research-data/ontologies/core> rdf:type owl:Ontology .
+<http://www.hesge.ch/open-research-data/ontologies/core> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  https://www.hesge.ch/open-research-data/ontologies/core#domain
+###  http://www.hesge.ch/open-research-data/ontologies/core#domain
 :domain rdf:type owl:ObjectProperty .
 
 
-###  https://www.hesge.ch/open-research-data/ontologies/core#format
+###  http://www.hesge.ch/open-research-data/ontologies/core#format
 :format rdf:type owl:ObjectProperty .
 
 
@@ -24,15 +24,15 @@
 #    Classes
 #################################################################
 
-###  https://www.hesge.ch/open-research-data/ontologies/core#Data
+###  http://www.hesge.ch/open-research-data/ontologies/core#Data
 :Data rdf:type owl:Class .
 
 
-###  https://www.hesge.ch/open-research-data/ontologies/core#Domains
+###  http://www.hesge.ch/open-research-data/ontologies/core#Domains
 :Domains rdf:type owl:Class .
 
 
-###  https://www.hesge.ch/open-research-data/ontologies/core#Formats
+###  http://www.hesge.ch/open-research-data/ontologies/core#Formats
 :Formats rdf:type owl:Class .
 
 
