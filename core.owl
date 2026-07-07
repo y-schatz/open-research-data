@@ -1,25 +1,15 @@
-@prefix : <http://www.hesge.ch/ontologies/core#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix core: <http://www.hesge.ch/ontologies/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.hesge.ch/ontologies/core> .
-
-<http://www.hesge.ch/ontologies/core> rdf:type owl:Ontology .
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.hesge.ch/ontologies/core#Data
-core:Data rdf:type owl:Class .
-
-
-###  http://www.hesge.ch/ontologies/core#Domain
-core:Domain rdf:type owl:Class .
-
-
-###  http://www.hesge.ch/ontologies/core#Format
-core:Format rdf:type owl:Class .
+<?xml version="1.0"?>
+<rdf:RDF
+     xmlns="http://www.hesge.ch/ontologies/core#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="http://www.hesge.ch/ontologies/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	xml:base="http://www.hesge.ch/ontologies/core"
+    <owl:Ontology rdf:about="http://www.hesge.ch/ontologies/core"/>
+    <owl:Class rdf:about="http://www.hesge.ch/ontologies/core#Data"/>
+    <owl:Class rdf:about="http://www.hesge.ch/ontologies/core#Domain"/>
+    <owl:Class rdf:about="http://www.hesge.ch/ontologies/core#Format"/>
+</rdf:RDF>
