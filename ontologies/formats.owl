@@ -8,7 +8,16 @@
 @base <http://www.hesge.ch/open-research-data/ontologies/formats#> .
 
 <http://www.hesge.ch/open-research-data/ontologies/formats> rdf:type owl:Ontology ;
-                                                             owl:imports <https://raw.githubusercontent.com/y-schatz/open-research-data/refs/heads/main/ontologies/core.owl> .
+                                                             owl:imports <https://raw.githubusercontent.com/y-schatz/open-research-data/refs/heads/main/ontologies/attributes.owl> ,
+                                                                         <https://raw.githubusercontent.com/y-schatz/open-research-data/refs/heads/main/ontologies/core.owl> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.hesge.ch/open-research-data/ontologies/core#field
+core:field rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Individuals
@@ -41,9 +50,10 @@
 
 ###  http://www.hesge.ch/open-research-data/ontologies/formats#IndustryFoundationClasses
 :IndustryFoundationClasses rdf:type owl:NamedIndividual ;
-                           core:field "MVD" ;
+                           core:hasAttribute <http://www.hesge.ch/open-research-data/ontologies/attributes#ModelViewDefinition> ;
                            core:fileExtension ".ifc" ;
-                           core:mimeType "application/x-step" .
+                           core:mimeType "application/x-step" ;
+                           core:field "MVD" .
 
 
 ###  http://www.hesge.ch/open-research-data/ontologies/formats#JavaScriptObjectNotation
