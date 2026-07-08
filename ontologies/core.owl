@@ -12,6 +12,13 @@
 #    Object Properties
 #################################################################
 
+###  http://www.hesge.ch/open-research-data/ontologies/core#hasAttribute
+:hasAttribute rdf:type owl:ObjectProperty ;
+              rdfs:domain :DataArtifact ,
+                          :DataFormat ;
+              rdfs:range :Attribute .
+
+
 ###  http://www.hesge.ch/open-research-data/ontologies/core#hasFormat
 :hasFormat rdf:type owl:ObjectProperty ;
            rdfs:domain :DataArtifact ;
@@ -34,14 +41,6 @@
              rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain :DataArtifact ;
              rdfs:range xsd:string .
-
-
-###  http://www.hesge.ch/open-research-data/ontologies/core#field
-:field rdf:type owl:DatatypeProperty ;
-       rdfs:subPropertyOf owl:topDataProperty ;
-       rdfs:domain :DataArtifact ,
-                   :DataFormat ;
-       rdfs:range xsd:string .
 
 
 ###  http://www.hesge.ch/open-research-data/ontologies/core#fileExtension
@@ -82,6 +81,10 @@
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.hesge.ch/open-research-data/ontologies/core#Attribute
+:Attribute rdf:type owl:Class .
+
 
 ###  http://www.hesge.ch/open-research-data/ontologies/core#DataArtifact
 :DataArtifact rdf:type owl:Class .
