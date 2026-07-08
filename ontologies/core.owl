@@ -24,64 +24,57 @@
 
 ###  http://www.hesge.ch/open-research-data/ontologies/core#creationDate
 :creationDate rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf :dataArtifactProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
               rdfs:domain :DataArtifact ;
               rdfs:range xsd:dateTime .
 
 
-###  http://www.hesge.ch/open-research-data/ontologies/core#dataArtifactProperty
-:dataArtifactProperty rdf:type owl:DatatypeProperty .
-
-
-###  http://www.hesge.ch/open-research-data/ontologies/core#dataFormatProperty
-:dataFormatProperty rdf:type owl:DatatypeProperty .
-
-
 ###  http://www.hesge.ch/open-research-data/ontologies/core#description
 :description rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf :dataArtifactProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
              rdfs:domain :DataArtifact ;
              rdfs:range xsd:string .
 
 
+###  http://www.hesge.ch/open-research-data/ontologies/core#field
+:field rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :DataArtifact ,
+                   :DataFormat ;
+       rdfs:range xsd:string .
+
+
 ###  http://www.hesge.ch/open-research-data/ontologies/core#fileExtension
 :fileExtension rdf:type owl:DatatypeProperty ;
-               rdfs:subPropertyOf :dataFormatProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
                rdfs:domain :DataFormat ;
                rdfs:range xsd:string .
 
 
 ###  http://www.hesge.ch/open-research-data/ontologies/core#identifier
 :identifier rdf:type owl:DatatypeProperty ;
-            rdfs:subPropertyOf :dataArtifactProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
             rdfs:domain :DataArtifact ;
             rdfs:range xsd:string .
 
 
 ###  http://www.hesge.ch/open-research-data/ontologies/core#location
 :location rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf :dataArtifactProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
           rdfs:domain :DataArtifact ;
           rdfs:range xsd:anyURI .
 
 
 ###  http://www.hesge.ch/open-research-data/ontologies/core#mimeType
 :mimeType rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf :dataFormatProperty ;
-          rdfs:domain :DataFormat ;
-          rdfs:range xsd:string .
-
-
-###  http://www.hesge.ch/open-research-data/ontologies/core#standard
-:standard rdf:type owl:DatatypeProperty ;
-          rdfs:subPropertyOf :dataFormatProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
           rdfs:domain :DataFormat ;
           rdfs:range xsd:string .
 
 
 ###  http://www.hesge.ch/open-research-data/ontologies/core#version
 :version rdf:type owl:DatatypeProperty ;
-         rdfs:subPropertyOf :dataArtifactProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
          rdfs:domain :DataArtifact ;
          rdfs:range xsd:string .
 
