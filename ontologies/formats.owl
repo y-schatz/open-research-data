@@ -1,21 +1,21 @@
-@prefix : <http://www.hesge.ch/open-research-data/ontologies/formats#> .
+@prefix : <http://www.hesge.ch/metafair/ontologies/formats#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix core: <http://www.hesge.ch/open-research-data/ontologies/core#> .
+@prefix core: <http://www.hesge.ch/metafair/ontologies/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.hesge.ch/open-research-data/ontologies/formats#> .
+@base <http://www.hesge.ch/metafair/ontologies/formats#> .
 
-<http://www.hesge.ch/open-research-data/ontologies/formats> rdf:type owl:Ontology ;
-                                                             owl:imports <https://raw.githubusercontent.com/y-schatz/open-research-data/refs/heads/main/ontologies/attributes.owl> ,
-                                                                         <https://raw.githubusercontent.com/y-schatz/open-research-data/refs/heads/main/ontologies/core.owl> .
+<http://www.hesge.ch/metafair/ontologies/formats> rdf:type owl:Ontology ;
+                                                             owl:imports <https://raw.githubusercontent.com/y-schatz/metafair/refs/heads/main/ontologies/attributes.owl> ,
+                                                                         <https://raw.githubusercontent.com/y-schatz/metafair/refs/heads/main/ontologies/core.owl> .
 
 #################################################################
 #    Annotation properties
 #################################################################
 
-###  http://www.hesge.ch/open-research-data/ontologies/core#field
+###  http://www.hesge.ch/metafair/ontologies/core#field
 core:field rdf:type owl:AnnotationProperty .
 
 
@@ -23,46 +23,46 @@ core:field rdf:type owl:AnnotationProperty .
 #    Individuals
 #################################################################
 
-###  http://www.hesge.ch/open-research-data/ontologies/formats#AutoCADDrawing
+###  http://www.hesge.ch/metafair/ontologies/formats#AutoCADDrawing
 :AutoCADDrawing rdf:type owl:NamedIndividual ,
                          core:DataFormat ;
                 core:fileExtension ".dwg" ;
                 core:mimeType "image/vnd.dwg" .
 
 
-###  http://www.hesge.ch/open-research-data/ontologies/formats#BuildingCollaborationFormat
+###  http://www.hesge.ch/metafair/ontologies/formats#BuildingCollaborationFormat
 :BuildingCollaborationFormat rdf:type owl:NamedIndividual ;
                              core:fileExtension ".bcf" ;
                              core:mimeType "application/octet-stream" .
 
 
-###  http://www.hesge.ch/open-research-data/ontologies/formats#CommaSeparatedValues
+###  http://www.hesge.ch/metafair/ontologies/formats#CommaSeparatedValues
 :CommaSeparatedValues rdf:type owl:NamedIndividual ;
                       core:fileExtension ".csv" ;
                       core:mimeType "text/csv" .
 
 
-###  http://www.hesge.ch/open-research-data/ontologies/formats#DrawingExchangeFormat
+###  http://www.hesge.ch/metafair/ontologies/formats#DrawingExchangeFormat
 :DrawingExchangeFormat rdf:type owl:NamedIndividual ;
                        core:fileExtension ".dxf" ;
                        core:mimeType "image/vnd.dxf" .
 
 
-###  http://www.hesge.ch/open-research-data/ontologies/formats#IndustryFoundationClasses
+###  http://www.hesge.ch/metafair/ontologies/formats#IndustryFoundationClasses
 :IndustryFoundationClasses rdf:type owl:NamedIndividual ;
-                           core:hasAttribute <http://www.hesge.ch/open-research-data/ontologies/attributes#ModelViewDefinition> ;
+                           core:hasAttribute <http://www.hesge.ch/metafair/ontologies/attributes#ModelViewDefinition> ;
                            core:fileExtension ".ifc" ;
                            core:mimeType "application/x-step" ;
                            core:field "MVD" .
 
 
-###  http://www.hesge.ch/open-research-data/ontologies/formats#JavaScriptObjectNotation
+###  http://www.hesge.ch/metafair/ontologies/formats#JavaScriptObjectNotation
 :JavaScriptObjectNotation rdf:type owl:NamedIndividual ;
                           core:fileExtension ".json" ;
                           core:mimeType "application/json" .
 
 
-###  http://www.hesge.ch/open-research-data/ontologies/formats#PortableDocumentFormat
+###  http://www.hesge.ch/metafair/ontologies/formats#PortableDocumentFormat
 :PortableDocumentFormat rdf:type owl:NamedIndividual ;
                         core:fileExtension ".pdf" ;
                         core:mimeType "application/pdf" .

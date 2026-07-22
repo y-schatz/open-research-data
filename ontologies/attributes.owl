@@ -1,20 +1,20 @@
-@prefix : <http://www.hesge.ch/open-research-data/ontologies/attributes#> .
+@prefix : <http://www.hesge.ch/metafair/ontologies/attributes#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix core: <http://www.hesge.ch/open-research-data/ontologies/core#> .
+@prefix core: <http://www.hesge.ch/metafair/ontologies/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.hesge.ch/open-research-data/ontologies/attributes#> .
+@base <http://www.hesge.ch/metafair/ontologies/attributes#> .
 
-<http://www.hesge.ch/open-research-data/ontologies/attributes> rdf:type owl:Ontology ;
-                                                                owl:imports <https://raw.githubusercontent.com/y-schatz/open-research-data/refs/heads/main/ontologies/core.owl> .
+<http://www.hesge.ch/metafair/ontologies/attributes> rdf:type owl:Ontology ;
+                                                                owl:imports <https://raw.githubusercontent.com/y-schatz/metafair/refs/heads/main/ontologies/core.owl> .
 
 #################################################################
 #    Individuals
 #################################################################
 
-###  http://www.hesge.ch/open-research-data/ontologies/attributes#Discipline
+###  http://www.hesge.ch/metafair/ontologies/attributes#Discipline
 :Discipline rdf:type owl:NamedIndividual ,
                      core:Attribute ;
             rdfs:label "Discipline"@en ,
@@ -22,7 +22,7 @@
                        "Fachbereich"@de .
 
 
-###  http://www.hesge.ch/open-research-data/ontologies/attributes#ModelViewDefinition
+###  http://www.hesge.ch/metafair/ontologies/attributes#ModelViewDefinition
 :ModelViewDefinition rdf:type owl:NamedIndividual ,
                               core:Attribute ;
                      rdfs:label "Définition de vue du modèle"@fr ,
